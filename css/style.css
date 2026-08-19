@@ -2140,4 +2140,8 @@ ul {
         width: 28px;
         height: 28px;
     }
+    .back-to-top {
+        right: 20px;
+        bottom: 90px;
+    }
 }
