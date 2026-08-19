@@ -89,6 +89,23 @@
         .article-content p {
             margin-bottom: 1rem;
         }
+        .breadcrumbs {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        .breadcrumbs a {
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .breadcrumbs a:hover {
+            color: var(--color-secondary);
+        }
     </style>
 </head>
 <body>
@@ -119,12 +136,23 @@
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
             </a>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </button>
         </div>
     </nav>
 
     <!-- Blog Header -->
     <header class="blog-header">
         <div class="container">
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span class="current">Blog</span>
+            </div>
             <span class="section-tag">&lt;blog&gt;</span>
             <h1 class="section-title">Wawasan <span class="gradient-text">Digital</span></h1>
             <p class="section-subtitle">Artikel seputar teknologi web, bisnis digital, dan tren company profile terbaru.</p>
@@ -234,14 +262,52 @@
 
         // Navbar Scroll
         const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('back-to-top');
+        
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
             }
+            
+            // Back to top visibility
+            if (backToTop) {
+                if (window.scrollY > 500) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            }
         });
+
+        if (backToTop) {
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Mobile toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
     </script>
+    <!-- Back to top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/6285779991402" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
         <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor">
