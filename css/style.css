@@ -359,10 +359,10 @@ ul {
 }
 
 .toggle-bar {
-    width: 24px;
-    height: 2px;
-    background: var(--text-primary);
-    border-radius: 2px;
+    width: 28px;
+    height: 3px;
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    border-radius: 3px;
     transition: all var(--transition-normal);
 }
 
