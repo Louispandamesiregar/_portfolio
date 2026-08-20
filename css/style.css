@@ -2148,7 +2148,7 @@ ul {
 
 /* Mobile Swipe & Snap Experience */
 @media (max-width: 768px) {
-    .pricing-grid {
+    .pricing-grid, .skills-grid, .services-grid {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -2159,18 +2159,54 @@ ul {
         /* Sembunyikan scrollbar agar lebih estetis layaknya App */
         scrollbar-width: none; 
     }
-    .pricing-grid::-webkit-scrollbar {
+    .pricing-grid::-webkit-scrollbar, .skills-grid::-webkit-scrollbar, .services-grid::-webkit-scrollbar {
         display: none;
     }
     
-    .pricing-card {
+    .pricing-card, .skill-category, .service-card {
         flex: 0 0 85%; /* Kartu mengambil 85% lebar layar, sisa 15% untuk 'mengintip' kartu sebelahnya */
         scroll-snap-align: center;
         margin-right: 1rem;
     }
     
     /* Hilangkan margin kanan pada elemen terakhir agar snap pas di tengah */
-    .pricing-card:last-child {
+    .pricing-card:last-child, .skill-category:last-child, .service-card:last-child {
         margin-right: 0;
+    }
+
+    /* Swipe Dots Styling */
+    .swipe-dots {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: -10px;
+        margin-bottom: 30px;
+    }
+    
+    .swipe-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+    }
+    
+    .swipe-dot.active {
+        background-color: #00f0ff;
+        width: 24px;
+        border-radius: 4px;
+    }
+
+    /* Nudge Animation for Swipe Hint */
+    @keyframes swipeNudge {
+        0% { transform: translateX(0); }
+        30% { transform: translateX(-15px) rotate(-1deg); }
+        50% { transform: translateX(5px) rotate(1deg); }
+        70% { transform: translateX(-8px); }
+        100% { transform: translateX(0); }
+    }
+
+    .shake-hint {
+        animation: swipeNudge 1.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
     }
 }

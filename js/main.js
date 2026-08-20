@@ -404,4 +404,61 @@
     window.removeEventListener('scroll', updateActiveNav);
     window.addEventListener('scroll', onScroll, { passive: true });
 
+    // ========================================
+    // MOBILE SWIPE & SNAP LOGIC
+    // ========================================
+    function initSwipeSnaps() {
+        const grids = [
+            { grid: document.querySelector('.skills-grid'), dots: document.getElementById('skills-dots') },
+            { grid: document.querySelector('.services-grid'), dots: document.getElementById('services-dots') },
+            { grid: document.querySelector('.pricing-grid'), dots: document.getElementById('pricing-dots') }
+        ];
+
+        grids.forEach(item => {
+            if (!item.grid || !item.dots) return;
+
+            // Trigger shake hint when element comes into view (on mobile)
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && window.innerWidth <= 768) {
+                        const firstCard = item.grid.children[0];
+                        if (firstCard && !firstCard.classList.contains('shake-hint')) {
+                            firstCard.classList.add('shake-hint');
+                        }
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            observer.observe(item.grid);
+
+            // Setup dots based on number of children
+            const numCards = item.grid.children.length;
+            item.dots.innerHTML = '';
+            for (let i = 0; i < numCards; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'swipe-dot' + (i === 0 ? ' active' : '');
+                item.dots.appendChild(dot);
+            }
+
+            // Update dots on scroll
+            item.grid.addEventListener('scroll', () => {
+                if (window.innerWidth > 768) return;
+                const scrollLeft = item.grid.scrollLeft;
+                const cardWidth = item.grid.children[0].offsetWidth;
+                const activeIndex = Math.round(scrollLeft / cardWidth);
+
+                const dots = item.dots.querySelectorAll('.swipe-dot');
+                dots.forEach((dot, index) => {
+                    if (index === activeIndex) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+            }, { passive: true });
+        });
+    }
+
+    initSwipeSnaps();
+
 })();
