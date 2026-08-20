@@ -2145,3 +2145,32 @@ ul {
         bottom: 90px;
     }
 }
+
+/* Mobile Swipe & Snap Experience */
+@media (max-width: 768px) {
+    .pricing-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        padding-bottom: 2rem; /* Ruang untuk scrollbar/bayangan */
+        -webkit-overflow-scrolling: touch;
+        /* Sembunyikan scrollbar agar lebih estetis layaknya App */
+        scrollbar-width: none; 
+    }
+    .pricing-grid::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .pricing-card {
+        flex: 0 0 85%; /* Kartu mengambil 85% lebar layar, sisa 15% untuk 'mengintip' kartu sebelahnya */
+        scroll-snap-align: center;
+        margin-right: 1rem;
+    }
+    
+    /* Hilangkan margin kanan pada elemen terakhir agar snap pas di tengah */
+    .pricing-card:last-child {
+        margin-right: 0;
+    }
+}
