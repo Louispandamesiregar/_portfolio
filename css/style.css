@@ -2155,6 +2155,9 @@ ul {
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         padding-bottom: 2rem; /* Ruang untuk scrollbar/bayangan */
+        padding-left: 7.5vw;  /* Agar item pertama di tengah */
+        padding-right: 7.5vw; /* Agar item terakhir di tengah */
+        gap: 1rem;
         -webkit-overflow-scrolling: touch;
         /* Sembunyikan scrollbar agar lebih estetis layaknya App */
         scrollbar-width: none; 
@@ -2164,16 +2167,11 @@ ul {
     }
     
     .pricing-card, .skill-category, .service-card {
-        flex: 0 0 85%; /* Kartu mengambil 85% lebar layar, sisa 15% untuk 'mengintip' kartu sebelahnya */
+        flex: 0 0 85vw; /* Kartu mengambil 85% lebar layar */
         scroll-snap-align: center;
-        margin-right: 1rem;
+        margin-right: 0; /* Hapus margin, ganti pakai gap di parent */
     }
     
-    /* Hilangkan margin kanan pada elemen terakhir agar snap pas di tengah */
-    .pricing-card:last-child, .skill-category:last-child, .service-card:last-child {
-        margin-right: 0;
-    }
-
     /* Swipe Dots Styling */
     .swipe-dots {
         display: flex;
@@ -2197,16 +2195,15 @@ ul {
         border-radius: 4px;
     }
 
-    /* Nudge Animation for Swipe Hint */
+    /* Nudge Animation for Swipe Hint (Repeats every 4 seconds) */
     @keyframes swipeNudge {
-        0% { transform: translateX(0); }
-        30% { transform: translateX(-15px) rotate(-1deg); }
-        50% { transform: translateX(5px) rotate(1deg); }
-        70% { transform: translateX(-8px); }
-        100% { transform: translateX(0); }
+        0%, 75%, 100% { transform: translateX(0); }
+        80% { transform: translateX(-15px) rotate(-1deg); }
+        88% { transform: translateX(5px) rotate(1deg); }
+        95% { transform: translateX(-8px); }
     }
 
     .shake-hint {
-        animation: swipeNudge 1.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+        animation: swipeNudge 4s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
     }
 }

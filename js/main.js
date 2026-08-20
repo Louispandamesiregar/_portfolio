@@ -443,6 +443,13 @@
             // Update dots on scroll
             item.grid.addEventListener('scroll', () => {
                 if (window.innerWidth > 768) return;
+                
+                // Hapus animasi goyang jika pengguna sudah mengerti cara menggesernya
+                const firstCard = item.grid.children[0];
+                if (firstCard && firstCard.classList.contains('shake-hint')) {
+                    firstCard.classList.remove('shake-hint');
+                }
+
                 const scrollLeft = item.grid.scrollLeft;
                 const cardWidth = item.grid.children[0].offsetWidth;
                 const activeIndex = Math.round(scrollLeft / cardWidth);
