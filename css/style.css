@@ -1893,7 +1893,7 @@ ul {
 
 @media (max-width: 768px) {
     :root {
-        --section-padding: 50px;
+        --section-padding: 30px;
     }
 
     body {
@@ -2154,7 +2154,7 @@ ul {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
-        padding-bottom: 2rem; /* Ruang untuk scrollbar/bayangan */
+        padding-bottom: 1rem; /* Ruang untuk scrollbar/bayangan */
         padding-left: 7.5vw;  /* Agar item pertama di tengah */
         padding-right: 7.5vw; /* Agar item terakhir di tengah */
         gap: 1rem;
@@ -2179,7 +2179,7 @@ ul {
         justify-content: center;
         gap: 8px;
         margin-top: -10px;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     
     .swipe-dot {
@@ -2194,6 +2194,19 @@ ul {
         background-color: var(--color-primary, #0ea5e9);
         width: 24px;
         border-radius: 4px;
+    }
+
+    .section-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .tech-stack-title {
+        margin-bottom: 1rem;
+    }
+
+    .tech-icon {
+        width: 40px;
+        height: 40px;
     }
 
     /* Nudge Animation for Swipe Hint (Repeats every 4 seconds) */
