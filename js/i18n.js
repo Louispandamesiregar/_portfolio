@@ -291,6 +291,96 @@
         'footer-social': {
             id: 'Sosial',
             en: 'Social'
+        },
+
+        // === Blog Page ===
+        'blog-title': {
+            id: 'Wawasan <span class="gradient-text">Digital</span>',
+            en: 'Digital <span class="gradient-text">Insights</span>'
+        },
+        'blog-subtitle': {
+            id: 'Artikel seputar teknologi web, bisnis digital, dan tren company profile terbaru.',
+            en: 'Articles about web technology, digital business, and the latest company profile trends.'
+        },
+        'blog-meta-1-tag': {
+            id: '🏷️ Bisnis & Teknologi',
+            en: '🏷️ Business & Technology'
+        },
+        'blog-article-1-title': {
+            id: 'Mengapa Bisnis Anda Wajib Memiliki Website Company Profile di Tahun 2026?',
+            en: 'Why Your Business Must Have a Company Profile Website in 2026?'
+        },
+        'blog-a1-p1': {
+            id: 'Di era digital yang serba cepat ini, memiliki kehadiran online yang solid bukan lagi sebuah kemewahan, melainkan kebutuhan mutlak bagi setiap perusahaan. <strong>Website company profile</strong> berfungsi sebagai brosur digital 24/7 yang bekerja tanpa henti untuk mempresentasikan kredibilitas, visi, dan layanan bisnis Anda kepada dunia.',
+            en: 'In today\'s fast-paced digital era, having a solid online presence is no longer a luxury but an absolute necessity for every company. A <strong>company profile website</strong> serves as a 24/7 digital brochure that works tirelessly to present your business credibility, vision, and services to the world.'
+        },
+        'blog-a1-h1': {
+            id: '1. Meningkatkan Kredibilitas dan Profesionalisme',
+            en: '1. Boosting Credibility and Professionalism'
+        },
+        'blog-a1-p2': {
+            id: 'Menurut berbagai studi perilaku konsumen, lebih dari 80% calon klien akan melakukan riset secara online sebelum memutuskan untuk bekerja sama dengan sebuah perusahaan (B2B) atau membeli produk (B2C). Jika bisnis Anda tidak dapat ditemukan di Google, atau memiliki website yang terlihat usang, Anda akan langsung kehilangan kepercayaan mereka. <strong>Jasa pembuatan website</strong> yang profesional memastikan company profile Anda tidak hanya ada, tetapi tampil meyakinkan.',
+            en: 'According to various consumer behavior studies, over 80% of potential clients will conduct online research before deciding to work with a company (B2B) or purchase a product (B2C). If your business cannot be found on Google, or has an outdated-looking website, you will immediately lose their trust. Professional <strong>website development services</strong> ensure your company profile not only exists but looks convincing.'
+        },
+        'blog-a1-h2': {
+            id: '2. Etalase Portofolio Tanpa Batas',
+            en: '2. Unlimited Portfolio Showcase'
+        },
+        'blog-a1-p3': {
+            id: 'Tidak seperti brosur cetak yang memiliki keterbatasan ruang dan biaya cetak, website company profile memungkinkan Anda menampilkan portofolio karya terbaik, galeri produk, dan daftar klien tanpa batas. Fitur interaktif seperti animasi 3D dan galeri responsif membuat presentasi bisnis Anda jauh lebih memukau.',
+            en: 'Unlike printed brochures that have space and printing cost limitations, a company profile website allows you to showcase your best portfolio works, product galleries, and client lists without limits. Interactive features like 3D animations and responsive galleries make your business presentation far more impressive.'
+        },
+        'blog-a1-h3': {
+            id: '3. Fondasi SEO (Search Engine Optimization)',
+            en: '3. SEO (Search Engine Optimization) Foundation'
+        },
+        'blog-a1-p4': {
+            id: 'Website adalah pusat dari seluruh strategi pemasaran digital Anda. Dengan struktur HTML yang baik dan konten yang dioptimasi untuk SEO (seperti kata kunci <em>"jasa desain website"</em> atau industri spesifik Anda), perusahaan Anda berpeluang besar untuk ditemukan oleh klien potensial tepat saat mereka sedang mencari solusi yang Anda tawarkan di mesin pencari.',
+            en: 'A website is the center of your entire digital marketing strategy. With proper HTML structure and SEO-optimized content (such as keywords like <em>"website design services"</em> or your specific industry), your company has a great chance of being found by potential clients right when they are searching for the solutions you offer on search engines.'
+        },
+        'blog-a1-conclusion': {
+            id: '<strong>Kesimpulan:</strong> Berinvestasi pada jasa pembuatan website company profile adalah langkah strategis jangka panjang. Ini bukan sekadar pengeluaran, melainkan aset digital yang akan terus menghasilkan "Return on Investment" (ROI) melalui prospek baru.',
+            en: '<strong>Conclusion:</strong> Investing in company profile website development services is a long-term strategic move. It is not just an expense but a digital asset that will continuously generate Return on Investment (ROI) through new prospects.'
+        },
+        'blog-meta-2-tag': {
+            id: '🏷️ Tips & Panduan',
+            en: '🏷️ Tips & Guide'
+        },
+        'blog-article-2-title': {
+            id: 'Tips Memilih Jasa Pembuatan Website yang Tepat untuk Perusahaan Anda',
+            en: 'Tips for Choosing the Right Website Development Service for Your Company'
+        },
+        'blog-a2-p1': {
+            id: 'Memilih <strong>web developer</strong> atau agensi yang tepat untuk membangun website perusahaan Anda bisa menjadi tugas yang membingungkan. Terlalu banyak pilihan di luar sana, mulai dari freelancer yang menawarkan harga sangat murah hingga agensi besar dengan harga premium.',
+            en: 'Choosing the right <strong>web developer</strong> or agency to build your company website can be a confusing task. There are too many options out there, from freelancers offering very cheap prices to large agencies with premium pricing.'
+        },
+        'blog-a2-h1': {
+            id: 'A. Cek Portofolio dan Studi Kasus',
+            en: 'A. Check Portfolio and Case Studies'
+        },
+        'blog-a2-p2': {
+            id: 'Hal pertama dan terpenting adalah melihat hasil kerja mereka sebelumnya. Seorang web developer yang handal tidak hanya akan berbicara soal teknis, tetapi mampu menunjukkan contoh website yang telah mereka selesaikan. Perhatikan aspek visual, kecepatan *loading*, dan apakah desainnya responsif ketika dibuka di *smartphone*.',
+            en: 'The first and most important thing is to look at their previous work. A skilled web developer won\'t just talk about technicalities but will be able to show examples of websites they have completed. Pay attention to the visual aspects, loading speed, and whether the design is responsive when opened on a smartphone.'
+        },
+        'blog-a2-h2': {
+            id: 'B. Pahami Tumpukan Teknologi (Tech Stack) yang Digunakan',
+            en: 'B. Understand the Tech Stack Used'
+        },
+        'blog-a2-p3': {
+            id: 'Pastikan jasa pembuatan website yang Anda pilih menggunakan teknologi modern. Website yang dibangun dengan pendekatan usang akan mudah terkena peretasan dan lambat saat diakses. Penggunaan framework modern seperti React, Next.js, dipadukan dengan performa *vanilla* Javascript untuk interaksi ringan, merupakan standar emas saat ini.',
+            en: 'Make sure the website development service you choose uses modern technology. A website built with outdated approaches will be vulnerable to hacking and slow to access. Using modern frameworks like React, Next.js, combined with vanilla JavaScript performance for lightweight interactions, is the gold standard today.'
+        },
+        'blog-a2-h3': {
+            id: 'C. Tanyakan Tentang Optimasi SEO',
+            en: 'C. Ask About SEO Optimization'
+        },
+        'blog-a2-p4': {
+            id: 'Sebuah website yang indah tidak akan berguna jika tidak ada yang mengunjunginya. Tanyakan apakah layanan mereka mencakup optimasi SEO dasar. Apakah mereka mengatur *meta tags*, memastikan struktur *heading* benar, dan mengompres gambar (WebP/AVIF)? Ini adalah hal fundamental yang membedakan web developer amatir dari seorang profesional.',
+            en: 'A beautiful website is useless if no one visits it. Ask whether their services include basic SEO optimization. Do they set up meta tags, ensure proper heading structure, and compress images (WebP/AVIF)? These are fundamental things that distinguish an amateur web developer from a professional.'
+        },
+        'blog-footer-layanan': {
+            id: 'Layanan',
+            en: 'Services'
         }
     };
 
