@@ -2152,7 +2152,9 @@ ul {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
-        scroll-snap-type: x mandatory;
+        scroll-snap-type: x proximity;
+        touch-action: pan-y pan-x;
+        overscroll-behavior-y: contain;
         scroll-behavior: smooth;
         padding-bottom: 1rem; /* Ruang untuk scrollbar/bayangan */
         padding-left: 7.5vw;  /* Agar item pertama di tengah */
