@@ -50,7 +50,7 @@
             <div class="loader-bar">
                 <div class="loader-bar-fill"></div>
             </div>
-            <p class="loader-text">Memuat pengalaman...</p>
+            <p class="loader-text" data-i18n="loader-text">Memuat pengalaman...</p>
         </div>
     </div>
 
@@ -68,14 +68,19 @@
                     <li class="nav-item"><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
                     <li class="nav-item"><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
                     <li class="nav-item"><a href="#clients" class="nav-link" data-section="clients">Clients</a></li>
-                    <li class="nav-item"><a href="#services" class="nav-link" data-section="services">Layanan</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link" data-section="services" data-i18n="nav-services">Layanan</a></li>
                     <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
                 </ul>
             </div>
 
+            <div class="lang-toggle" id="lang-toggle">
+                <button class="lang-btn active" data-lang="id">ID</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+
             <a href="#contact" class="nav-cta">
-                <span>Hire Me</span>
+                <span data-i18n="nav-cta">Hire Me</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
@@ -95,7 +100,7 @@
         <div class="hero-content">
             <div class="hero-badge animate-on-scroll">
                 <span class="badge-dot"></span>
-                Available for Freelance
+                <span data-i18n="hero-badge">Available for Freelance</span>
             </div>
             <h1 class="hero-title animate-on-scroll">
                 <span class="hero-greeting">Hello, I'm</span>
@@ -107,18 +112,18 @@
                 <span class="typing-cursor">|</span>
                 <span class="role-suffix">/&gt;</span>
             </div>
-            <p class="hero-description animate-on-scroll">
+            <p class="hero-description animate-on-scroll" data-i18n="hero-description">
                 Membangun website modern & berkinerja tinggi yang mengubah visi bisnis Anda menjadi pengalaman digital yang memukau.
             </p>
             <div class="hero-cta animate-on-scroll">
                 <a href="#projects" class="btn btn-primary">
-                    <span>Lihat Karya Saya</span>
+                    <span data-i18n="hero-cta-primary">Lihat Karya Saya</span>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
                 </a>
                 <a href="#contact" class="btn btn-secondary">
-                    <span>Hubungi Saya</span>
+                    <span data-i18n="hero-cta-secondary">Hubungi Saya</span>
                 </a>
             </div>
             <div class="hero-stats animate-on-scroll">
@@ -142,7 +147,7 @@
             <div class="mouse">
                 <div class="mouse-wheel"></div>
             </div>
-            <span>Scroll Down</span>
+            <span data-i18n="scroll-indicator">Scroll Down</span>
         </div>
     </section>
 
@@ -151,8 +156,8 @@
         <div class="container">
             <div class="section-header animate-on-scroll">
                 <span class="section-tag">&lt;about&gt;</span>
-                <h2 class="section-title">Tentang <span class="gradient-text">Saya</span></h2>
-                <p class="section-subtitle">Mengenal lebih dekat siapa di balik kode-kode ini</p>
+                <h2 class="section-title" data-i18n="about-title">Tentang <span class="gradient-text">Saya</span></h2>
+                <p class="section-subtitle" data-i18n="about-subtitle">Mengenal lebih dekat siapa di balik kode-kode ini</p>
             </div>
 
             <div class="about-grid">
@@ -169,15 +174,15 @@
                 <div class="about-content">
                     <div class="about-text animate-on-scroll">
                         <h3 class="about-heading">Web Developer & <span class="gradient-text">Creative Designer</span></h3>
-                        <p>
+                        <p data-i18n="about-p1">
                             Saya adalah mahasiswa <strong>Universitas Pelita Bangsa</strong> yang berdedikasi dalam dunia pengembangan web. 
                             Dengan passion yang kuat dalam menciptakan website yang tidak hanya fungsional tetapi juga memukau secara visual.
                         </p>
-                        <p>
+                        <p data-i18n="about-p2">
                             Saya mengkhususkan diri dalam pembuatan <strong>Company Profile</strong>, <strong>Corporate Website</strong>, 
                             dan solusi web modern menggunakan teknologi terkini seperti React, Next.js, dan Three.js.
                         </p>
-                        <p>
+                        <p data-i18n="about-p3">
                             Setiap proyek yang saya kerjakan bukan sekadar menulis kode — melainkan menciptakan pengalaman digital 
                             yang meninggalkan kesan mendalam bagi pengunjung website klien saya.
                         </p>
@@ -187,21 +192,21 @@
                         <div class="info-item">
                             <span class="info-icon">🎓</span>
                             <div>
-                                <span class="info-label">Pendidikan</span>
+                                <span class="info-label" data-i18n="info-education-label">Pendidikan</span>
                                 <span class="info-value">Universitas Pelita Bangsa</span>
                             </div>
                         </div>
                         <div class="info-item">
                             <span class="info-icon">📍</span>
                             <div>
-                                <span class="info-label">Lokasi</span>
+                                <span class="info-label" data-i18n="info-location-label">Lokasi</span>
                                 <span class="info-value">Indonesia</span>
                             </div>
                         </div>
                         <div class="info-item">
                             <span class="info-icon">💼</span>
                             <div>
-                                <span class="info-label">Spesialisasi</span>
+                                <span class="info-label" data-i18n="info-specialization-label">Spesialisasi</span>
                                 <span class="info-value">Company Profile & Corporate Web</span>
                             </div>
                         </div>
@@ -216,7 +221,7 @@
 
                     <div class="about-actions animate-on-scroll">
                         <a href="#contact" class="btn btn-primary">
-                            <span>Mari Bekerja Sama</span>
+                            <span data-i18n="about-cta">Mari Bekerja Sama</span>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
                             </svg>
@@ -243,8 +248,8 @@
         <div class="container">
             <div class="section-header animate-on-scroll">
                 <span class="section-tag">&lt;skills&gt;</span>
-                <h2 class="section-title">Keahlian & <span class="gradient-text">Teknologi</span></h2>
-                <p class="section-subtitle">Tools dan teknologi yang saya kuasai untuk membangun website berkualitas tinggi</p>
+                <h2 class="section-title" data-i18n="skills-title">Keahlian & <span class="gradient-text">Teknologi</span></h2>
+                <p class="section-subtitle" data-i18n="skills-subtitle">Tools dan teknologi yang saya kuasai untuk membangun website berkualitas tinggi</p>
             </div>
 
             <div class="skills-grid">
@@ -442,8 +447,8 @@
         <div class="container">
             <div class="section-header animate-on-scroll">
                 <span class="section-tag">&lt;services&gt;</span>
-                <h2 class="section-title">Layanan <span class="gradient-text">Profesional</span></h2>
-                <p class="section-subtitle">Solusi digital terbaik untuk meningkatkan kredibilitas dan performa bisnis Anda secara online</p>
+                <h2 class="section-title" data-i18n="services-title">Layanan <span class="gradient-text">Profesional</span></h2>
+                <p class="section-subtitle" data-i18n="services-subtitle">Solusi digital terbaik untuk meningkatkan kredibilitas dan performa bisnis Anda secara online</p>
             </div>
 
             <div class="services-grid">
@@ -456,8 +461,8 @@
                             <line x1="12" y1="17" x2="12" y2="21"></line>
                         </svg>
                     </div>
-                    <h3 class="service-title">Jasa Pembuatan Website Custom</h3>
-                    <p class="service-description">Membangun website dari nol yang disesuaikan dengan identitas brand Anda. Berkinerja tinggi, sangat responsif, dan aman untuk menjangkau audiens secara global.</p>
+                    <h3 class="service-title" data-i18n="service-1-title">Jasa Pembuatan Website Custom</h3>
+                    <p class="service-description" data-i18n="service-1-desc">Membangun website dari nol yang disesuaikan dengan identitas brand Anda. Berkinerja tinggi, sangat responsif, dan aman untuk menjangkau audiens secara global.</p>
                 </div>
                 <!-- Service 2 -->
                 <div class="service-card animate-on-scroll" data-tilt>
@@ -468,8 +473,8 @@
                             <polyline points="2 12 12 17 22 12"></polyline>
                         </svg>
                     </div>
-                    <h3 class="service-title">Desain Company Profile Interaktif</h3>
-                    <p class="service-description">Tingkatkan kredibilitas bisnis Anda di mata klien potensial dengan website company profile modern yang dilengkapi dengan animasi 3D interaktif yang memukau.</p>
+                    <h3 class="service-title" data-i18n="service-2-title">Desain Company Profile Interaktif</h3>
+                    <p class="service-description" data-i18n="service-2-desc">Tingkatkan kredibilitas bisnis Anda di mata klien potensial dengan website company profile modern yang dilengkapi dengan animasi 3D interaktif yang memukau.</p>
                 </div>
                 <!-- Service 3 -->
                 <div class="service-card animate-on-scroll" data-tilt>
@@ -478,8 +483,8 @@
                             <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Redesign & Optimasi SEO</h3>
-                    <p class="service-description">Memperbarui tampilan website lama Anda menjadi lebih segar dan modern, sekaligus melakukan optimasi agar lebih mudah ditemukan di halaman pertama pencarian Google.</p>
+                    <h3 class="service-title" data-i18n="service-3-title">Redesign & Optimasi SEO</h3>
+                    <p class="service-description" data-i18n="service-3-desc">Memperbarui tampilan website lama Anda menjadi lebih segar dan modern, sekaligus melakukan optimasi agar lebih mudah ditemukan di halaman pertama pencarian Google.</p>
                 </div>
             </div>
 
@@ -487,8 +492,8 @@
 
             <!-- Pricing Cards -->
             <div class="pricing-header animate-on-scroll">
-                <h3 class="pricing-title">Pilih Paket <span class="gradient-text">yang Sesuai</span></h3>
-                <p class="pricing-subtitle">Harga transparan, tanpa biaya tersembunyi. Konsultasi gratis untuk setiap paket.</p>
+                <h3 class="pricing-title" data-i18n="pricing-title">Pilih Paket <span class="gradient-text">yang Sesuai</span></h3>
+                <p class="pricing-subtitle" data-i18n="pricing-subtitle">Harga transparan, tanpa biaya tersembunyi. Konsultasi gratis untuk setiap paket.</p>
             </div>
 
             <div class="pricing-grid">
@@ -500,36 +505,36 @@
                         <span class="price-amount">1,5 Jt</span>
                         <span class="price-range">– 3 Jt</span>
                     </div>
-                    <p class="pricing-desc">Cocok untuk UMKM, toko lokal, atau kebutuhan digital pertama Anda.</p>
+                    <p class="pricing-desc" data-i18n="pricing-starter-desc">Cocok untuk UMKM, toko lokal, atau kebutuhan digital pertama Anda.</p>
                     <ul class="pricing-features">
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Landing page 1 halaman</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Desain responsif (mobile-friendly)</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Formulir kontak</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Revisi 2x</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Estimasi pengerjaan: 5–7 hari</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-starter-f1">Landing page 1 halaman</span></li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-starter-f2">Desain responsif (mobile-friendly)</span></li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-starter-f3">Formulir kontak</span></li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-starter-f4">Revisi 2x</span></li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-starter-f5">Estimasi pengerjaan: 5–7 hari</span></li>
                     </ul>
-                    <a href="https://wa.me/6285779991402?text=Halo%20Louis%2C%20saya%20tertarik%20dengan%20Paket%20Starter" target="_blank" rel="noopener noreferrer" class="btn btn-outline pricing-btn">Konsultasi Gratis</a>
+                    <a href="https://wa.me/6285779991402?text=Halo%20Louis%2C%20saya%20tertarik%20dengan%20Paket%20Starter" target="_blank" rel="noopener noreferrer" class="btn btn-outline pricing-btn" data-i18n="pricing-btn">Konsultasi Gratis</a>
                 </div>
 
                 <!-- Professional (Featured) -->
                 <div class="pricing-card featured animate-on-scroll" data-tilt>
-                    <div class="pricing-popular-badge">⭐ Paling Populer</div>
+                    <div class="pricing-popular-badge" data-i18n="pricing-popular">⭐ Paling Populer</div>
                     <div class="pricing-badge">Professional</div>
                     <div class="pricing-price">
                         <span class="price-currency">Rp</span>
                         <span class="price-amount">3,5 Jt</span>
                         <span class="price-range">– 4,5 Jt</span>
                     </div>
-                    <p class="pricing-desc">Cocok untuk perusahaan menengah dan startup yang ingin tampil profesional.</p>
+                    <p class="pricing-desc" data-i18n="pricing-pro-desc">Cocok untuk perusahaan menengah dan startup yang ingin tampil profesional.</p>
                     <ul class="pricing-features">
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Company profile 5–8 halaman</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Animasi modern & desain premium</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> SEO dasar teroptimasi</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Formulir kontak aktif (email)</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Revisi 3x</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Estimasi pengerjaan: 7–14 hari</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-pro-f1">Company profile 5–8 halaman</span></li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-pro-f2">Animasi modern & desain premium</span></li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-pro-f3">SEO dasar teroptimasi</span></li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-pro-f4">Formulir kontak aktif (email)</span></li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-pro-f5">Revisi 3x</span></li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-pro-f6">Estimasi pengerjaan: 7–14 hari</span></li>
                     </ul>
-                    <a href="https://wa.me/6285779991402?text=Halo%20Louis%2C%20saya%20tertarik%20dengan%20Paket%20Professional" target="_blank" rel="noopener noreferrer" class="btn btn-primary pricing-btn">Konsultasi Gratis</a>
+                    <a href="https://wa.me/6285779991402?text=Halo%20Louis%2C%20saya%20tertarik%20dengan%20Paket%20Professional" target="_blank" rel="noopener noreferrer" class="btn btn-primary pricing-btn" data-i18n="pricing-btn">Konsultasi Gratis</a>
                 </div>
 
                 <!-- Premium -->
@@ -540,22 +545,22 @@
                         <span class="price-amount">5 Jt</span>
                         <span class="price-range">– 7 Jt</span>
                     </div>
-                    <p class="pricing-desc">Cocok untuk korporat yang ingin tampil berbeda dengan teknologi 3D interaktif.</p>
+                    <p class="pricing-desc" data-i18n="pricing-premium-desc">Cocok untuk korporat yang ingin tampil berbeda dengan teknologi 3D interaktif.</p>
                     <ul class="pricing-features">
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Website custom multi-halaman</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Animasi 3D interaktif (Three.js)</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Performa & Core Web Vitals tinggi</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> SEO komprehensif + artikel blog</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Revisi unlimited (30 hari)</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Estimasi pengerjaan: 14–21 hari</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-premium-f1">Website custom multi-halaman</span></li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-premium-f2">Animasi 3D interaktif (Three.js)</span></li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-premium-f3">Performa & Core Web Vitals tinggi</span></li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-premium-f4">SEO komprehensif + artikel blog</span></li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-premium-f5">Revisi unlimited (30 hari)</span></li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="pricing-premium-f6">Estimasi pengerjaan: 14–21 hari</span></li>
                     </ul>
-                    <a href="https://wa.me/6285779991402?text=Halo%20Louis%2C%20saya%20tertarik%20dengan%20Paket%20Premium" target="_blank" rel="noopener noreferrer" class="btn btn-outline pricing-btn">Konsultasi Gratis</a>
+                    <a href="https://wa.me/6285779991402?text=Halo%20Louis%2C%20saya%20tertarik%20dengan%20Paket%20Premium" target="_blank" rel="noopener noreferrer" class="btn btn-outline pricing-btn" data-i18n="pricing-btn">Konsultasi Gratis</a>
                 </div>
             </div>
 
             <div class="swipe-dots" id="pricing-dots"></div>
 
-            <p class="pricing-note animate-on-scroll">* Harga dapat disesuaikan dengan kebutuhan spesifik proyek Anda. Hubungi saya untuk diskusi lebih lanjut.</p>
+            <p class="pricing-note animate-on-scroll" data-i18n="pricing-note">* Harga dapat disesuaikan dengan kebutuhan spesifik proyek Anda. Hubungi saya untuk diskusi lebih lanjut.</p>
         </div>
     </section>
 
@@ -564,8 +569,8 @@
         <div class="container">
             <div class="section-header animate-on-scroll">
                 <span class="section-tag">&lt;projects&gt;</span>
-                <h2 class="section-title">Karya <span class="gradient-text">Terbaik</span></h2>
-                <p class="section-subtitle">Beberapa proyek yang telah saya selesaikan untuk klien dan showcase</p>
+                <h2 class="section-title" data-i18n="projects-title">Karya <span class="gradient-text">Terbaik</span></h2>
+                <p class="section-subtitle" data-i18n="projects-subtitle">Beberapa proyek yang telah saya selesaikan untuk klien dan showcase</p>
             </div>
 
             <div class="projects-grid">
@@ -591,7 +596,7 @@
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">PT Nawasena Jaya Group</h3>
-                        <p class="project-description">
+                        <p class="project-description" data-i18n="project-1-desc">
                             Website company profile profesional untuk perusahaan logistik dan distribusi berbasis di Jakarta. 
                             Menampilkan armada, layanan, dan unit bisnis perusahaan.
                         </p>
@@ -623,7 +628,7 @@
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Louis Gedung — Convention Hall</h3>
-                        <p class="project-description">
+                        <p class="project-description" data-i18n="project-2-desc">
                             Website pemesanan convention hall premium yang elegan. Menampilkan fasilitas mewah, kapasitas tamu besar, galeri estetis, dan formulir booking acara secara online.
                         </p>
                         <div class="project-tags">
@@ -653,7 +658,7 @@
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">F&B Company Profile</h3>
-                        <p class="project-description">
+                        <p class="project-description" data-i18n="project-3-desc">
                             Website company profile modern untuk bisnis Food & Beverage dengan desain elegan dan navigasi intuitif.
                         </p>
                         <div class="project-tags">
@@ -684,7 +689,7 @@
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Contractor Company Profile</h3>
-                        <p class="project-description">
+                        <p class="project-description" data-i18n="project-4-desc">
                             Website perusahaan kontraktor dengan desain profesional, menampilkan portfolio proyek konstruksi dan layanan.
                         </p>
                         <div class="project-tags">
@@ -714,7 +719,7 @@
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Lifestyle Brand & Coffee Shop</h3>
-                        <p class="project-description">
+                        <p class="project-description" data-i18n="project-5-desc">
                             Website e-commerce responsif untuk lini pakaian yang dipadukan dengan profil kedai kopi. Menampilkan desain asimetris bergaya kolase dengan palet warna earthy.
                         </p>
                         <div class="project-tags">
@@ -737,7 +742,7 @@
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">3D Interactive Portfolio</h3>
-                        <p class="project-description">
+                        <p class="project-description" data-i18n="project-6-desc">
                             Website portfolio interaktif ini! Dibangun dengan Three.js, menampilkan animasi 3D, particle system, dan efek visual premium.
                         </p>
                         <div class="project-tags">
@@ -757,8 +762,8 @@
         <div class="container">
             <div class="section-header animate-on-scroll">
                 <span class="section-tag">&lt;clients&gt;</span>
-                <h2 class="section-title">Klien yang <span class="gradient-text">Mempercayai</span></h2>
-                <p class="section-subtitle">Perusahaan yang telah bekerja sama dengan saya</p>
+                <h2 class="section-title" data-i18n="clients-title">Klien yang <span class="gradient-text">Mempercayai</span></h2>
+                <p class="section-subtitle" data-i18n="clients-subtitle">Perusahaan yang telah bekerja sama dengan saya</p>
             </div>
 
             <div class="clients-showcase">
@@ -773,7 +778,7 @@
                             <span class="client-type">Logistics & Distribution Company</span>
                         </div>
                     </div>
-                    <p class="client-description">
+                    <p class="client-description" data-i18n="client-1-desc">
                         Mengembangkan website company profile lengkap untuk perusahaan logistik dan distribusi.
                         Menampilkan armada kendaraan, layanan pengiriman & procurement, serta unit bisnis diversifikasi 
                         (F&B, retail). Website dibangun dengan Next.js dan di-deploy di Vercel.
@@ -786,7 +791,7 @@
                         <span class="deliverable">SEO Optimized</span>
                     </div>
                     <a href="https://nawasenajayagroup.com/" target="_blank" rel="noopener noreferrer" class="client-link">
-                        <span>Kunjungi Website</span>
+                        <span data-i18n="client-visit">Kunjungi Website</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
@@ -796,7 +801,7 @@
 
             <!-- Trusted By Marquee -->
             <div class="trust-section animate-on-scroll">
-                <p class="trust-label">Teknologi yang saya gunakan untuk membangun solusi terbaik</p>
+                <p class="trust-label" data-i18n="trust-label">Teknologi yang saya gunakan untuk membangun solusi terbaik</p>
                 <div class="marquee-container">
                     <div class="marquee-track">
                         <div class="marquee-item">⚡ React.js</div>
@@ -825,14 +830,14 @@
         <div class="container">
             <div class="section-header animate-on-scroll">
                 <span class="section-tag">&lt;contact&gt;</span>
-                <h2 class="section-title">Mari <span class="gradient-text">Terhubung</span></h2>
-                <p class="section-subtitle">Punya proyek menarik? Mari diskusikan bagaimana saya bisa membantu</p>
+                <h2 class="section-title" data-i18n="contact-title">Mari <span class="gradient-text">Terhubung</span></h2>
+                <p class="section-subtitle" data-i18n="contact-subtitle">Punya proyek menarik? Mari diskusikan bagaimana saya bisa membantu</p>
             </div>
 
             <div class="contact-grid">
                 <div class="contact-info animate-on-scroll">
-                    <h3 class="contact-heading">Mulai Proyek Bersama</h3>
-                    <p class="contact-text">
+                    <h3 class="contact-heading" data-i18n="contact-heading">Mulai Proyek Bersama</h3>
+                    <p class="contact-text" data-i18n="contact-text">
                         Saya selalu terbuka untuk peluang baru dan kolaborasi menarik. 
                         Baik itu company profile, corporate website, atau proyek kreatif lainnya — 
                         mari kita wujudkan bersama.
@@ -881,7 +886,7 @@
                 <div class="contact-form-wrapper animate-on-scroll">
                     <form class="contact-form" id="contact-form">
                         <div class="form-group">
-                            <label for="name" class="form-label">Nama Lengkap</label>
+                            <label for="name" class="form-label" data-i18n="form-name">Nama Lengkap</label>
                             <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
                         </div>
                         <div class="form-group">
@@ -889,15 +894,15 @@
                             <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
                         </div>
                         <div class="form-group">
-                            <label for="subject" class="form-label">Subjek</label>
+                            <label for="subject" class="form-label" data-i18n="form-subject">Subjek</label>
                             <input type="text" id="subject" name="subject" class="form-input" placeholder="Company Profile Website">
                         </div>
                         <div class="form-group">
-                            <label for="message" class="form-label">Pesan</label>
-                            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Ceritakan tentang proyek Anda..." rows="5" required></textarea>
+                            <label for="message" class="form-label" data-i18n="form-message">Pesan</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Ceritakan tentang proyek Anda..." data-i18n-placeholder="form-message-placeholder" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
-                            <span>Kirim Pesan</span>
+                            <span data-i18n="form-submit">Kirim Pesan</span>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <line x1="22" y1="2" x2="11" y2="13"/>
                                 <polygon points="22 2 15 22 11 13 2 9 22 2"/>
@@ -918,12 +923,12 @@
                         <img src="img/logo_louis.webp" alt="Louis Logo" class="site-logo">
                         <span style="font-size: 1.5rem; font-weight: 700; background: linear-gradient(to right, #a855f7, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.5px; max-width: 100%;">Louis Pandame Siregar</span>
                     </a>
-                    <p class="footer-tagline">Membangun pengalaman digital yang memukau</p>
+                    <p class="footer-tagline" data-i18n="footer-tagline">Membangun pengalaman digital yang memukau</p>
                 </div>
 
                 <div class="footer-links">
                     <div class="footer-col">
-                        <h4>Navigasi</h4>
+                        <h4 data-i18n="footer-nav">Navigasi</h4>
                         <ul>
                             <li><a href="#hero">Home</a></li>
                             <li><a href="#about">About</a></li>
@@ -932,7 +937,7 @@
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>Sosial</h4>
+                        <h4 data-i18n="footer-social">Sosial</h4>
                         <ul>
                             <li><a href="https://github.com/Louispandamesiregar" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                             <li><a href="https://www.linkedin.com/in/louispandamesiregar" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
@@ -966,6 +971,7 @@
     <script src="js/three-scene.js" defer></script>
     <script src="js/globe.js" defer></script>
     <script src="js/tilt.js" defer></script>
+    <script src="js/i18n.js" defer></script>
     <script src="js/main.js" defer></script>
 
     <!-- EmailJS Contact Form -->
