@@ -192,7 +192,11 @@
         },
         'projects-subtitle': {
             id: 'Beberapa proyek yang telah saya selesaikan untuk klien dan showcase',
-            en: 'Some projects I have completed for clients and showcase'
+            en: 'Some of the projects I have completed for clients and showcases'
+        },
+        'projects-view-all': {
+            id: 'Lihat Semua Proyek',
+            en: 'View All Projects'
         },
         'project-1-desc': {
             id: 'Website company profile profesional untuk perusahaan logistik dan distribusi berbasis di Jakarta. Menampilkan armada, layanan, dan unit bisnis perusahaan.',
