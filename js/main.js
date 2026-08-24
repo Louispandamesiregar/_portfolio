@@ -12,17 +12,17 @@
     // ========================================
     const loader = document.getElementById('loader');
     
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            if (loader) {
+    if (loader) {
+        // Prevent scrolling during load (only if loader exists)
+        document.body.style.overflow = 'hidden';
+
+        window.addEventListener('load', () => {
+            setTimeout(() => {
                 loader.classList.add('hidden');
                 document.body.style.overflow = '';
-            }
-        }, 2200);
-    });
-
-    // Prevent scrolling during load
-    document.body.style.overflow = 'hidden';
+            }, 2200);
+        });
+    }
 
     // ========================================
     // CUSTOM CURSOR
