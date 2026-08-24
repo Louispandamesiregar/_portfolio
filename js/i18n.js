@@ -279,6 +279,72 @@
             en: 'Send Message'
         },
 
+        // === FAQ ===
+        'faq-title': {
+            id: 'Pertanyaan yang Sering <span class="gradient-text">Diajukan</span>',
+            en: 'Frequently Asked <span class="gradient-text">Questions</span>'
+        },
+        'faq-subtitle': {
+            id: 'Jawaban dari beberapa pertanyaan umum sebelum kita mulai bekerja sama',
+            en: 'Answers to some common questions before we start working together'
+        },
+        'faq-q1': {
+            id: 'Apakah harga paket sudah termasuk biaya Domain dan Hosting?',
+            en: 'Does the package price include Domain and Hosting fees?'
+        },
+        'faq-a1': {
+            id: 'Ya, seluruh paket pembuatan website (Starter, Professional, dan Premium) sudah termasuk <strong>GRATIS biaya Domain</strong> (contoh: .com / .co.id) dan <strong>Hosting berkecepatan tinggi</strong> untuk 1 tahun pertama. Anda terima beres!',
+            en: 'Yes, all website development packages (Starter, Professional, and Premium) include a <strong>FREE Domain</strong> (e.g., .com / .co.id) and <strong>high-speed Hosting</strong> for the first year. We handle everything!'
+        },
+        'faq-q2': {
+            id: 'Bagaimana sistem pembayarannya?',
+            en: 'What is the payment system?'
+        },
+        'faq-a2': {
+            id: 'Pembayaran dilakukan dalam 2 tahap untuk keamanan dan kenyamanan bersama: DP (Down Payment) 50% dibayarkan sebelum pengerjaan proyek dimulai, dan sisa pelunasan 50% dibayarkan setelah website selesai 100% dan siap di-online-kan.',
+            en: 'Payment is made in 2 stages for mutual security and convenience: a 50% Down Payment (DP) is paid before the project starts, and the remaining 50% balance is paid after the website is 100% complete and ready to go online.'
+        },
+        'faq-q3': {
+            id: 'Apakah ada biaya bulanan atau tahunan setelah website jadi?',
+            en: 'Are there any monthly or annual fees after the website is done?'
+        },
+        'faq-a3': {
+            id: '<strong>Tidak ada biaya berlangganan bulanan dari saya!</strong> Anda hanya menyiapkan dana untuk biaya perpanjangan tahunan (Domain & Hosting) yang baru akan dibayarkan mulai dari tahun kedua ke pihak penyedia server (provider).',
+            en: '<strong>There are no monthly subscription fees from me!</strong> You only need to prepare funds for the annual renewal fee (Domain & Hosting), which will only be paid starting from the second year directly to the server provider.'
+        },
+        'faq-q4': {
+            id: 'Apa saja yang perlu saya siapkan sebelum mulai pembuatan website?',
+            en: 'What do I need to prepare before starting the website development?'
+        },
+        'faq-a4': {
+            id: 'Sangat mudah! Anda hanya perlu menyiapkan draf <strong>Profil Perusahaan</strong> (sejarah, layanan, dll), <strong>Logo</strong> resolusi tinggi, <strong>foto/video asli bisnis Anda</strong> (jika ada), serta referensi website yang Anda sukai. Sisanya dari sisi desain dan teknis akan saya tangani seluruhnya.',
+            en: 'It\'s very easy! You only need to prepare a draft of your <strong>Company Profile</strong> (history, services, etc.), a high-resolution <strong>Logo</strong>, <strong>original photos/videos of your business</strong> (if any), and website references you like. I will handle all the rest, from design to technical aspects.'
+        },
+        'faq-q5': {
+            id: 'Bagaimana jika saya butuh revisi lebih dari yang ditentukan di paket?',
+            en: 'What if I need more revisions than specified in the package?'
+        },
+        'faq-a5': {
+            id: 'Jangan khawatir. Jika jatah revisi paket Anda sudah habis, penyesuaian tambahan tetap bisa dilakukan dengan biaya tambahan (add-on) yang terjangkau per revisinya, tergantung tingkat kesulitan perubahan.',
+            en: 'Don\'t worry. If your package revision quota runs out, further adjustments can still be made with an affordable add-on fee per revision session, depending on the complexity of the changes.'
+        },
+        'faq-q6': {
+            id: 'Apakah saya bisa mengubah/update isi konten website sendiri ke depannya?',
+            en: 'Can I change/update the website content myself in the future?'
+        },
+        'faq-a6': {
+            id: 'Ya! Khusus untuk <strong>Paket Professional dan Premium</strong>, website akan diintegrasikan dengan Headless CMS (Sistem Manajemen Konten) modern. Anda akan mendapatkan halaman Admin untuk mengubah teks dan foto dengan mudah tanpa harus paham kode sama sekali.',
+            en: 'Yes! Specifically for the <strong>Professional and Premium Packages</strong>, the website will be integrated with a modern Headless CMS (Content Management System). You will get an Admin page to easily change text and photos without needing to understand any code.'
+        },
+        'faq-q7': {
+            id: 'Apakah website saya otomatis muncul di halaman pertama pencarian Google?',
+            en: 'Will my website automatically appear on the first page of Google search?'
+        },
+        'faq-a7': {
+            id: 'Website yang saya buat sudah dirancang dengan struktur <strong>100% SEO-Friendly</strong> dan performa sangat cepat (Core Web Vitals standar Google). Ini adalah fondasi yang sempurna. Namun, untuk kata kunci bisnis yang sangat kompetitif, Anda mungkin memerlukan layanan optimasi SEO lanjutan secara berkala agar bisa stabil di halaman pertama.',
+            en: 'The websites I build are designed with a <strong>100% SEO-Friendly</strong> structure and very fast performance (Google Core Web Vitals standard). This is the perfect foundation. However, for highly competitive business keywords, you may need advanced SEO optimization services periodically to stay stable on the first page.'
+        },
+
         // === Footer ===
         'footer-tagline': {
             id: 'Membangun pengalaman digital yang memukau',

@@ -176,6 +176,32 @@
     animatedElements.forEach(el => scrollObserver.observe(el));
 
     // ========================================
+    // FAQ ACCORDION LOGIC
+    // ========================================
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close all others
+            faqItems.forEach(faq => {
+                faq.classList.remove('active');
+                const ans = faq.querySelector('.faq-answer');
+                if (ans) ans.style.maxHeight = null;
+            });
+            
+            if (!isActive) {
+                item.classList.add('active');
+                const answer = item.querySelector('.faq-answer');
+                if (answer) {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                }
+            }
+        });
+    });
+
+    // ========================================
     // TYPING ANIMATION
     // ========================================
     const typingElement = document.getElementById('typing-text');
