@@ -127,10 +127,10 @@
                     <li class="nav-item"><a href="index.html#hero" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="index.html#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="index.html#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link active">Projects</a></li>
                     <li class="nav-item"><a href="index.html#clients" class="nav-link">Clients</a></li>
                     <li class="nav-item"><a href="index.html#services" class="nav-link" data-i18n="nav-services">Layanan</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
                     <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
@@ -155,65 +155,199 @@
         </div>
     </nav>
 
-    <!-- Blog Header -->
-    <header class="blog-header">
+    <!-- Portfolio Content -->
+    <main class="portfolio-main">
+<section class="section projects" id="projects">
         <div class="container">
-            <div class="breadcrumbs">
-                <a href="index.html">Home</a>
-                <span>/</span>
-                <span class="current">Blog</span>
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title" data-i18n="projects-title">Karya <span class="gradient-text">Terbaik</span></h2>
+                <p class="section-subtitle" data-i18n="projects-subtitle">Beberapa proyek yang telah saya selesaikan untuk klien dan showcase</p>
             </div>
-            <span class="section-tag">&lt;blog&gt;</span>
-            <h1 class="section-title" data-i18n="blog-title">Wawasan <span class="gradient-text">Digital</span></h1>
-            <p class="section-subtitle" data-i18n="blog-subtitle">Artikel seputar teknologi web, bisnis digital, dan tren company profile terbaru.</p>
+
+            <div class="projects-grid">
+                <!-- Project 1: Nawasena Jaya Group -->
+                <div class="project-card featured animate-on-scroll" data-tilt>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=500&fit=crop&q=80&auto=format" alt="PT Nawasena Jaya Group" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://nawasenajayagroup.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit live site">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">
+                            <span class="badge-live"></span>
+                            Client Project
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">PT Nawasena Jaya Group</h3>
+                        <p class="project-description" data-i18n="project-1-desc">
+                            Website company profile profesional untuk perusahaan logistik dan distribusi berbasis di Jakarta. 
+                            Menampilkan armada, layanan, dan unit bisnis perusahaan.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Corporate</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Louis Gedung Convention Hall -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=500&fit=crop&q=80&auto=format" alt="Louis Gedung Convention Hall" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://louispandamesiregar.github.io/convention-hall/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit live site">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Louis Gedung — Convention Hall</h3>
+                        <p class="project-description" data-i18n="project-2-desc">
+                            Website pemesanan convention hall premium yang elegan. Menampilkan fasilitas mewah, kapasitas tamu besar, galeri estetis, dan formulir booking acara secara online.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Booking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: F&B Company Profile -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=500&fit=crop&q=80&auto=format" alt="F&B Company Profile" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://louispandamesiregar.github.io/compro_f-b/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit live site">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">F&B Company Profile</h3>
+                        <p class="project-description" data-i18n="project-3-desc">
+                            Website company profile modern untuk bisnis Food & Beverage dengan desain elegan dan navigasi intuitif.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">F&B</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Contractor Company Profile -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=500&fit=crop&q=80&auto=format" alt="Contractor Company Profile" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://louispandamesiregar.github.io/Compro_Contractor/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit live site">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Contractor Company Profile</h3>
+                        <p class="project-description" data-i18n="project-4-desc">
+                            Website perusahaan kontraktor dengan desain profesional, menampilkan portfolio proyek konstruksi dan layanan.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Construction</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Lifestyle Brand & Coffee Shop -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=800&h=500&fit=crop&q=80&auto=format" alt="Lifestyle Brand" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://louispandamesiregar.github.io/brand/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit live site">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Lifestyle Brand & Coffee Shop</h3>
+                        <p class="project-description" data-i18n="project-5-desc">
+                            Website e-commerce responsif untuk lini pakaian yang dipadukan dengan profil kedai kopi. Menampilkan desain asimetris bergaya kolase dengan palet warna earthy.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Vite</span>
+                            <span class="tag">E-Commerce</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: 3D Portfolio (This Site!) -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=800&h=500&fit=crop&q=80&auto=format" alt="3D Interactive Portfolio" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">3D Interactive Portfolio</h3>
+                        <p class="project-description" data-i18n="project-6-desc">
+                            Website portfolio interaktif ini! Dibangun dengan Three.js, menampilkan animasi 3D, particle system, dan efek visual premium.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Three.js</span>
+                            <span class="tag">3D</span>
+                            <span class="tag">WebGL</span>
+                            <span class="tag">Creative</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-
-    <!-- Blog Content -->
-    <main class="blog-container">
-        <!-- Article 1 -->
-        <article class="article-card">
-            <div class="article-meta">
-                <span>📅 16 Agustus 2026</span>
-                <span data-i18n="blog-meta-1-tag">🏷️ Bisnis & Teknologi</span>
-            </div>
-            <h2 class="article-title" data-i18n="blog-article-1-title">Mengapa Bisnis Anda Wajib Memiliki Website Company Profile di Tahun 2026?</h2>
-            <div class="article-content">
-                <p data-i18n="blog-a1-p1">Di era digital yang serba cepat ini, memiliki kehadiran online yang solid bukan lagi sebuah kemewahan, melainkan kebutuhan mutlak bagi setiap perusahaan. <strong>Website company profile</strong> berfungsi sebagai brosur digital 24/7 yang bekerja tanpa henti untuk mempresentasikan kredibilitas, visi, dan layanan bisnis Anda kepada dunia.</p>
-                
-                <h3 data-i18n="blog-a1-h1">1. Meningkatkan Kredibilitas dan Profesionalisme</h3>
-                <p data-i18n="blog-a1-p2">Menurut berbagai studi perilaku konsumen, lebih dari 80% calon klien akan melakukan riset secara online sebelum memutuskan untuk bekerja sama dengan sebuah perusahaan (B2B) atau membeli produk (B2C). Jika bisnis Anda tidak dapat ditemukan di Google, atau memiliki website yang terlihat usang, Anda akan langsung kehilangan kepercayaan mereka. <strong>Jasa pembuatan website</strong> yang profesional memastikan company profile Anda tidak hanya ada, tetapi tampil meyakinkan.</p>
-                
-                <h3 data-i18n="blog-a1-h2">2. Etalase Portofolio Tanpa Batas</h3>
-                <p data-i18n="blog-a1-p3">Tidak seperti brosur cetak yang memiliki keterbatasan ruang dan biaya cetak, website company profile memungkinkan Anda menampilkan portofolio karya terbaik, galeri produk, dan daftar klien tanpa batas. Fitur interaktif seperti animasi 3D dan galeri responsif membuat presentasi bisnis Anda jauh lebih memukau.</p>
-
-                <h3 data-i18n="blog-a1-h3">3. Fondasi SEO (Search Engine Optimization)</h3>
-                <p data-i18n="blog-a1-p4">Website adalah pusat dari seluruh strategi pemasaran digital Anda. Dengan struktur HTML yang baik dan konten yang dioptimasi untuk SEO (seperti kata kunci <em>"jasa desain website"</em> atau industri spesifik Anda), perusahaan Anda berpeluang besar untuk ditemukan oleh klien potensial tepat saat mereka sedang mencari solusi yang Anda tawarkan di mesin pencari.</p>
-                
-                <p data-i18n="blog-a1-conclusion"><strong>Kesimpulan:</strong> Berinvestasi pada jasa pembuatan website company profile adalah langkah strategis jangka panjang. Ini bukan sekadar pengeluaran, melainkan aset digital yang akan terus menghasilkan "Return on Investment" (ROI) melalui prospek baru.</p>
-            </div>
-        </article>
-
-        <!-- Article 2 -->
-        <article class="article-card">
-            <div class="article-meta">
-                <span>📅 10 Agustus 2026</span>
-                <span data-i18n="blog-meta-2-tag">🏷️ Tips & Panduan</span>
-            </div>
-            <h2 class="article-title" data-i18n="blog-article-2-title">Tips Memilih Jasa Pembuatan Website yang Tepat untuk Perusahaan Anda</h2>
-            <div class="article-content">
-                <p data-i18n="blog-a2-p1">Memilih <strong>web developer</strong> atau agensi yang tepat untuk membangun website perusahaan Anda bisa menjadi tugas yang membingungkan. Terlalu banyak pilihan di luar sana, mulai dari freelancer yang menawarkan harga sangat murah hingga agensi besar dengan harga premium.</p>
-                
-                <h3 data-i18n="blog-a2-h1">A. Cek Portofolio dan Studi Kasus</h3>
-                <p data-i18n="blog-a2-p2">Hal pertama dan terpenting adalah melihat hasil kerja mereka sebelumnya. Seorang web developer yang handal tidak hanya akan berbicara soal teknis, tetapi mampu menunjukkan contoh website yang telah mereka selesaikan. Perhatikan aspek visual, kecepatan *loading*, dan apakah desainnya responsif ketika dibuka di *smartphone*.</p>
-
-                <h3 data-i18n="blog-a2-h2">B. Pahami Tumpukan Teknologi (Tech Stack) yang Digunakan</h3>
-                <p data-i18n="blog-a2-p3">Pastikan jasa pembuatan website yang Anda pilih menggunakan teknologi modern. Website yang dibangun dengan pendekatan usang akan mudah terkena peretasan dan lambat saat diakses. Penggunaan framework modern seperti React, Next.js, dipadukan dengan performa *vanilla* Javascript untuk interaksi ringan, merupakan standar emas saat ini.</p>
-
-                <h3 data-i18n="blog-a2-h3">C. Tanyakan Tentang Optimasi SEO</h3>
-                <p data-i18n="blog-a2-p4">Sebuah website yang indah tidak akan berguna jika tidak ada yang mengunjunginya. Tanyakan apakah layanan mereka mencakup optimasi SEO dasar. Apakah mereka mengatur *meta tags*, memastikan struktur *heading* benar, dan mengompres gambar (WebP/AVIF)? Ini adalah hal fundamental yang membedakan web developer amatir dari seorang profesional.</p>
-            </div>
-        </article>
+    </section>
     </main>
 
     <!-- Footer -->
