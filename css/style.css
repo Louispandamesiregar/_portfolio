@@ -2319,9 +2319,8 @@ ul {
         flex-wrap: nowrap;
         overflow-x: auto;
         scroll-snap-type: x proximity;
-        touch-action: pan-y pan-x;
-        overscroll-behavior-y: contain;
-        scroll-behavior: smooth;
+        touch-action: pan-y;
+        overscroll-behavior-x: contain;
         padding-bottom: 1rem; /* Ruang untuk scrollbar/bayangan */
         padding-left: 7.5vw;  /* Agar item pertama di tengah */
         padding-right: 7.5vw; /* Agar item terakhir di tengah */
