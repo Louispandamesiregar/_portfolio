@@ -2319,7 +2319,7 @@ ul {
         flex-wrap: nowrap;
         overflow-x: auto;
         scroll-snap-type: x proximity;
-        touch-action: pan-y;
+        touch-action: manipulation;
         overscroll-behavior-x: contain;
         padding-bottom: 1rem; /* Ruang untuk scrollbar/bayangan */
         padding-left: 7.5vw;  /* Agar item pertama di tengah */
@@ -2377,14 +2377,5 @@ ul {
     }
 
     /* Nudge Animation for Swipe Hint (Repeats every 4 seconds) */
-    @keyframes swipeNudge {
-        0%, 75%, 100% { transform: translateX(0); }
-        80% { transform: translateX(-15px) rotate(-1deg); }
-        88% { transform: translateX(5px) rotate(1deg); }
-        95% { transform: translateX(-8px); }
-    }
-
-    .shake-hint {
-        animation: swipeNudge 4s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
-    }
+    /* shake-hint animation removed — mengganggu scroll */
 }
