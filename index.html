@@ -697,16 +697,31 @@
                 <!-- Single View All Card -->
                 <div class="project-card view-all-card animate-on-scroll" data-tilt>
                     <a href="portfolio.html" class="view-all-link">
-                        <div class="project-image">
-                            <!-- Background collage or a good representative image -->
-                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=500&fit=crop&q=80&auto=format" alt="Portfolio View All" loading="lazy">
-                            <div class="view-all-overlay">
-                                <h3 data-i18n="projects-view-all">View All Projects</h3>
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
+                        <!-- Bento Mosaic Grid — ganti src untuk update gambar -->
+                        <div class="mosaic-grid">
+                            <div class="mosaic-item mosaic-large" data-mosaic-slot="1">
+                                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop&q=80&auto=format" alt="Project 1" loading="lazy">
                             </div>
+                            <div class="mosaic-item mosaic-tall" data-mosaic-slot="2">
+                                <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=400&h=500&fit=crop&q=80&auto=format" alt="Project 2" loading="lazy">
+                            </div>
+                            <div class="mosaic-item" data-mosaic-slot="3">
+                                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop&q=80&auto=format" alt="Project 3" loading="lazy">
+                            </div>
+                            <div class="mosaic-item" data-mosaic-slot="4">
+                                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=300&fit=crop&q=80&auto=format" alt="Project 4" loading="lazy">
+                            </div>
+                            <div class="mosaic-item mosaic-wide" data-mosaic-slot="5">
+                                <img src="https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=600&h=300&fit=crop&q=80&auto=format" alt="Project 5" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="view-all-overlay">
+                            <h3 data-i18n="projects-view-all">Lihat Semua Proyek</h3>
+                            <span class="view-all-count" data-i18n="projects-count">6+ proyek selesai</span>
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
                         </div>
                     </a>
                 </div>

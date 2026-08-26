@@ -1414,7 +1414,7 @@ ul {
     gap: 2rem;
 }
 
-/* View All Banner specific styles */
+/* View All Banner — Bento Mosaic */
 .view-all-card {
     grid-column: 1 / -1;
     border-radius: var(--radius-lg);
@@ -1428,53 +1428,131 @@ ul {
     display: block;
     width: 100%;
     height: 100%;
+    text-decoration: none;
 }
 
-.view-all-card .project-image {
-    height: 350px;
+/* ---- Mosaic Grid ---- */
+.mosaic-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 180px 180px;
+    gap: 4px;
+    height: 364px;
+}
+
+/* Named grid areas for bento-style asymmetry */
+.mosaic-item.mosaic-large {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.mosaic-item.mosaic-tall {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+.mosaic-item:nth-child(3) {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+.mosaic-item:nth-child(4) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.mosaic-item.mosaic-wide {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+/* But mosaic-tall already occupies col 3 row 2, so shift wide */
+.mosaic-item.mosaic-tall {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+
+.mosaic-item.mosaic-wide {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.mosaic-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.mosaic-item img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease, filter 0.6s ease;
+    filter: brightness(0.7) saturate(0.9);
 }
 
+.view-all-card:hover .mosaic-item img {
+    transform: scale(1.08);
+    filter: brightness(0.85) saturate(1.1);
+}
+
+/* ---- Overlay ---- */
 .view-all-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(10, 10, 10, 0.6);
+    background: linear-gradient(135deg, rgba(10, 10, 30, 0.7) 0%, rgba(14, 165, 233, 0.15) 100%);
+    backdrop-filter: blur(2px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--text-primary);
-    transition: all var(--transition-normal);
+    transition: all 0.5s ease;
+    z-index: 2;
+    gap: 0.5rem;
 }
 
 .view-all-overlay h3 {
     font-size: 2.5rem;
     font-family: var(--font-heading);
     letter-spacing: 2px;
-    margin-bottom: 1rem;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
-    background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
+    margin-bottom: 0;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.6);
+    background: linear-gradient(135deg, #ffffff 0%, #c0c0c0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all var(--transition-normal);
 }
 
+.view-all-count {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
 .view-all-overlay svg {
     color: var(--color-primary);
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: drop-shadow(0 0 8px rgba(14, 165, 233, 0.4));
 }
 
 .view-all-card:hover .view-all-overlay {
-    background: rgba(10, 10, 10, 0.4);
+    background: linear-gradient(135deg, rgba(10, 10, 30, 0.45) 0%, rgba(14, 165, 233, 0.08) 100%);
+    backdrop-filter: blur(0px);
 }
 
 .view-all-card:hover .view-all-overlay h3 {
     transform: scale(1.05);
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+    -webkit-background-clip: text;
 }
 
 .view-all-card:hover .view-all-overlay svg {
     transform: translateX(10px);
 }
+
 
 
 .project-card {
@@ -2148,6 +2226,48 @@ ul {
 
     .project-card.featured .project-image {
         height: 240px;
+    }
+
+    /* Mosaic responsive */
+    .mosaic-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 120px 120px;
+        height: 244px;
+        gap: 3px;
+    }
+
+    .mosaic-item.mosaic-large {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .mosaic-item.mosaic-tall {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .mosaic-item:nth-child(3),
+    .mosaic-item:nth-child(4) {
+        display: none;
+    }
+
+    .mosaic-item.mosaic-wide {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .view-all-overlay h3 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .view-all-count {
+        font-size: 0.8rem;
+    }
+
+    .view-all-overlay svg {
+        width: 28px;
+        height: 28px;
     }
 
     /* About */
