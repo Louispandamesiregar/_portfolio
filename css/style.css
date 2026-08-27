@@ -2286,7 +2286,9 @@ ul {
     }
 
     .footer-links {
-        gap: 2rem;
+        justify-content: center;
+        gap: 6rem;
+        width: 100%;
     }
 
     .footer-bottom {
@@ -2444,7 +2446,6 @@ ul {
         overflow-x: auto;
         overflow-y: hidden;
         scroll-snap-type: x mandatory;
-        touch-action: pan-x;
         overscroll-behavior-x: contain;
         padding-bottom: 1rem; /* Ruang untuk scrollbar/bayangan */
         padding-left: 7.5vw;  /* Agar item pertama di tengah */
