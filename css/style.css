@@ -292,6 +292,7 @@ ul {
 .nav-menu {
     display: flex;
     align-items: center;
+    gap: 2rem;
 }
 
 .nav-list {
@@ -2163,6 +2164,12 @@ ul {
         right: 0;
     }
 
+    .nav-menu .lang-toggle {
+        position: absolute;
+        top: 1.5rem;
+        left: 2rem;
+    }
+
     .nav-list {
         flex-direction: column;
         gap: 0.25rem;
@@ -2173,10 +2180,17 @@ ul {
         padding: 0.875rem 1rem;
         font-size: 1.1rem;
         border-radius: var(--radius-sm);
+        color: rgba(255, 255, 255, 0.85); /* Tambahkan agar warna terang */
+    }
+
+    .nav-link.active {
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.1);
     }
 
     .nav-link:hover {
-        background: rgba(255, 255, 255, 0.03);
+        background: rgba(255, 255, 255, 0.05);
+        color: #ffffff;
     }
 
     .nav-link::after {
@@ -2428,8 +2442,9 @@ ul {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
-        scroll-snap-type: x proximity;
-        touch-action: manipulation;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        touch-action: pan-x;
         overscroll-behavior-x: contain;
         padding-bottom: 1rem; /* Ruang untuk scrollbar/bayangan */
         padding-left: 7.5vw;  /* Agar item pertama di tengah */
