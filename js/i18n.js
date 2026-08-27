@@ -199,8 +199,8 @@
             en: 'View All Projects'
         },
         'projects-count': {
-            id: '6+ proyek selesai',
-            en: '6+ projects completed'
+            id: '7+ proyek selesai',
+            en: '7+ projects completed'
         },
         'project-1-desc': {
             id: 'Website company profile profesional untuk perusahaan logistik dan distribusi berbasis di Jakarta. Menampilkan armada, layanan, dan unit bisnis perusahaan.',
