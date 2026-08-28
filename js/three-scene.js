@@ -10,9 +10,13 @@
     const canvas = document.getElementById('hero-canvas');
     if (!canvas || typeof THREE === 'undefined') return;
 
+    const heroSection = document.getElementById('hero');
+    const width = heroSection ? heroSection.offsetWidth : window.innerWidth;
+    const height = heroSection ? heroSection.offsetHeight : window.innerHeight;
+
     // === Scene Setup ===
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
     camera.position.z = 5;
 
     const renderer = new THREE.WebGLRenderer({
@@ -21,7 +25,7 @@
         antialias: true,
         powerPreference: 'high-performance'
     });
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(width, height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setClearColor(0x000000, 0);
 
@@ -331,8 +335,8 @@
 
     // === Resize Handler ===
     window.addEventListener('resize', () => {
-        const width = window.innerWidth;
-        const height = window.innerHeight;
+        const width = heroSection ? heroSection.offsetWidth : window.innerWidth;
+        const height = heroSection ? heroSection.offsetHeight : window.innerHeight;
 
         camera.aspect = width / height;
         camera.updateProjectionMatrix();
@@ -343,7 +347,6 @@
     });
 
     // === Performance: Pause when not visible ===
-    const heroSection = document.getElementById('hero');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting && !isAnimating) {

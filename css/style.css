@@ -35,7 +35,7 @@
     --font-body: 'Inter', sans-serif;
 
     /* Spacing */
-    --section-padding: 80px;
+    --section-padding: 40px;
     --container-width: 1200px;
 
     /* Borders */
@@ -279,7 +279,7 @@ ul {
 }
 
 .site-logo {
-    height: 40px;
+    height: 45px;
     width: auto;
     object-fit: contain;
     transition: transform var(--transition-fast);
