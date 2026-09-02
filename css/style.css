@@ -232,11 +232,8 @@ ul {
     left: 0;
     width: 100%;
     z-index: var(--z-navbar);
-    padding: 1.25rem 2rem; /* Add horizontal padding */
+    padding: 1.25rem 0;
     transition: all var(--transition-normal);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .navbar.scrolled {
@@ -244,17 +241,16 @@ ul {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: var(--border-subtle);
-    padding: 0.75rem 2rem;
+    padding: 0.75rem 0;
 }
 
 .nav-container {
-    max-width: var(--container-width);
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex: 1;
+    justify-content: space-between;
 }
 
 .nav-logo {
